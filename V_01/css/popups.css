@@ -1,0 +1,154 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/*Estilos del índice*/
+#popup_indice { 
+	display:none;
+	background-color:#fff;
+	color: #111;
+	min-width: 100px;
+	min-height : 100px;
+	padding: 25px;
+	padding-top:15px;
+	padding-bottom:5px;
+	border-bottom: 5px  #e48727 solid;
+}
+
+#popup_indice p {
+	float:left;
+	text-align:left;
+	color:#000;
+	letter-spacing:-1px;
+	font-size: 20px;
+	width:100%;
+}
+.vineta_indice{
+    display: block;
+    float: left;
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+
+}
+#area_indice{
+	text-align:left;
+	max-height:400px;
+	min-width:300px;
+	overflow:auto;
+	padding-right:10px;
+}
+
+#area_indice p{
+	display:block;
+    float: left;
+	border-bottom:#b7621c 1px dotted;
+	color:#b7621c;
+	font-size: 20px;
+	text-align:left;
+	text-decoration:none;
+}
+
+#area_indice a {
+    display:list-item;
+    float: left;
+    clear: left;
+    height: 20px;
+    cursor:pointer;
+    text-decoration: none;
+    margin-bottom: 15px;
+    background-image: url(../img/interface/icono_itmen_indice.svg);
+    background-position: 4px left;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    font-size: 15px;
+    line-height: 14px;
+    border-bottom:#333 1px dotted;
+
+        
+}
+#area_indice a.no_visitado {
+	color:#000000;
+}
+	
+#area_indice a.actual {
+	font-weight:bold;
+ 	color:#e60000;
+}
+
+#area_indice a.visitado {
+	color:#a8b400;
+}
+
+#area_indice a.actual:hover, #area_indice a.visitado:hover{
+	color:#007c92;
+	cursor:pointer;
+}
+
+/*Estilo del pop-up de ayuda*/
+
+#popup_ayuda{ 
+   display:none;
+   padding: 0px;
+   border-bottom: 5px  #e48727 solid;
+   background-color:#FFFFFF;
+}
+
+#contenedor_ayuda{
+    width: 900px;
+    height: 550px;
+    background-color: #FFF;
+}
+			
+
+/*Estilo de los tooltips*/
+
+.ui-tooltip {
+    padding: 5px 10px;
+    color: black;
+    border-radius: 0px;
+    font: 10px "Helvetica Neue", Sans-Serif;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.25);
+    background-color: #FFF;
+ }
+ 
+ /*Estilo de la máscara del modal de herramientas*/
+ 
+.overlay-modal {
+	background-color : #000;
+	background-image : none;
+	background-repeat: repeat; 
+	opacity : 0.35;
+}
+
+
+#popup_externo{ 
+   display:none;
+   border-radius: 5px;
+   box-shadow: 0 0 20px 15px rgba(0,0,0,0.5);
+   min-width: 100px;
+   min-height : 100px;
+   padding: 0px;
+   border:#e60000 5px solid;
+   background-color:#FFFFFF;
+}
+
+
+.clase_dialogo_salida {
+	color: #111;
+	margin:0px;
+	padding:0px;
+	text-align:center;
+}
+
+.clase_dialogo_salida p {
+	text-align:center;
+		background-color:#FFF;
+		height:85px;
+		padding-top:20px;
+		margin-top:-10px;
+		width:300px;
+		margin-left:-25px;
+        font-size: 14px;
+
+}

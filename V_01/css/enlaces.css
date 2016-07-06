@@ -1,0 +1,98 @@
+/* CSS Document */
+a {
+	color:#000;
+	text-decoration:underline;
+}
+a:hover{
+	color:#b7621c;
+}
+
+.popup_enlaces{ 
+    display:none;
+    color: #111;
+    border: 10px rgba(255, 255, 255, 0.5) solid;
+    width: auto;
+    height: auto;
+    background-origin: content-box;
+    background-image: url(../img/interface/fondo_doc.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.popup_enlaces a {
+    display:list-item;
+    float: left;
+    clear: left;
+    border-bottom:#333 1px dotted;
+	height: 20px;
+    cursor:pointer;
+    text-decoration: none;
+    margin-bottom: 15px;
+    background-image: url(../img/interface/icono_itmen_indice.svg);
+    background-position: 4px left;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    font-size: 15px;
+    line-height: 14px;
+    list-style: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+	
+.popup_enlaces  a:hover {
+	border-bottom:#007c92 1px dotted;
+	color:#007c92;
+	text-align:left;
+}
+
+.popup_enlaces p {
+    display: block;
+    float: left;
+   /* position: absolute;
+    top:-24px;
+    left: 0;
+    z-index: 1;*/
+    text-align:left;
+	color:#fff;
+	font-size: 1.5em;
+    text-shadow: 1px 1px #000;
+    font-weight: 600;
+  	width:97.5%;
+    background-color: #a3b643;
+    padding: 5px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.bClose {
+    display: block;
+    float: right;
+    width: 70px;
+    height: 25px;
+    border: 1px solid #aaaaaa;
+    font-size: 12px;
+    color: #000;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    text-align: center;
+    vertical-align: middle;
+    text-shadow:none;
+    line-height: 24px;
+    margin-top: 5px;
+    margin-right: 2px;
+}
+}
+
+.bClose:hover {
+    background-color: #fff;
+    border: 1px solid #000;
+}
+#linea_de_abajo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #e48727;
+    margin-top: 20px;
+}

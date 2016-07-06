@@ -1,0 +1,17 @@
+{
+    "jscodehints.detectedExclusions": [
+        "/Users/federicogil/Desktop/MDI/_ATAM_NEURODEGENERATIVAS/10-DESARROLLO/04-ELA/contenido/u02/p16/js/sdmAnima.js",
+        "/Users/federicogil/Desktop/MDI/_ATAM_NEURODEGENERATIVAS/10-DESARROLLO/04-ELA/js/sdmAnima.js",
+        "/Users/federicogil/Desktop/MDI/_ATAM_NEURODEGENERATIVAS/10-DESARROLLO/04-ELA/js/curso_sco.js",
+        "/Users/federicogil/Desktop/MDI/_ATAM_NEURODEGENERATIVAS/10-DESARROLLO/04-ELA/contenido/u02/p07/js/interfaz_contenido.js",
+        "/Users/federicogil/Desktop/MDI/_ATAM_NEURODEGENERATIVAS/10-DESARROLLO/04-ELA/contenido/u01/p08/js/sdmAnima.js",
+        "/Users/federicogil/Desktop/MDI/_ATAM_NEURODEGENERATIVAS/10-DESARROLLO/04-ELA/contenido/u03/p08/js/interfaz_contenido.js",
+        "/Users/federicogil/Desktop/MDI/_ATAM_NEURODEGENERATIVAS/10-DESARROLLO/04-ELA/contenido/u02/p05/js/interfaz_contenido.js",
+        "/Users/federicogil/Desktop/MDI/_ATAM_NEURODEGENERATIVAS/10-DESARROLLO/04-ELA/contenido/u02/p04/js/interfaz_contenido.js",
+        "/Users/federicogil/Desktop/MDI/_ATAM_NEURODEGENERATIVAS/10-DESARROLLO/04-ELA/contenido/u02/p08/edge_includes/edge.4.0.1.min.js",
+        "/Users/federicogil/Desktop/MDI/_ATAM_NEURODEGENERATIVAS/10-DESARROLLO/04-ELA/contenido/u02/p05/edge_includes/edge.4.0.1.min.js",
+        "/Users/federicogil/Desktop/MDI/_ATAM_NEURODEGENERATIVAS/10-DESARROLLO/04-ELA/contenido/u05/p01/js/interfaz_contenido.js",
+        "/Users/federicogil/Desktop/MDI/_ATAM_NEURODEGENERATIVAS/10-DESARROLLO/04-ELA/contenido/u02/p04/edge_includes/edge.4.0.1.min.js",
+        "/Users/federicogil/Desktop/MDI/_ATAM_NEURODEGENERATIVAS/10-DESARROLLO/04-ELA/contenido/u02/p08/js/interfaz_contenido.js"
+    ]
+}

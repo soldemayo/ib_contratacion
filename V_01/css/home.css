@@ -1,0 +1,82 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*cabecera del popup de home*/
+div[aria-describedby='popup_home'] .ui-dialog-titlebar {
+	display: none;
+}
+
+#contenedor_home{
+	max-height: 643px;
+    max-width: 980px;
+	width: 100%;
+	height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+#popup_home{
+    max-height: 643px;
+    max-width: 980px;
+	width: 100%;
+	height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.clase_dialogo_home{
+    max-height: 643px;
+    max-width: 980px;
+	width: 100%;
+	height: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+
+.unidadVista{
+    filter: grayscale(100);
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+	filter: grayscale(100%); /* Para cuando es estándar funcione en todos */
+	filter: Gray(); /* IE4-8 and 9 */
+	background-color: #F00;
+	color:#0F0;
+	
+}
+
+
+ @media only screen (max-device-width: 1024px) and  (max-device-width: 1280px) and (orientation:landscape) {
+ 
+    
+    #contenedor_home{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+         width: 480px;
+        height: 320px
+        
+
+    }
+    
+    #popup_home{
+        text-align: center;
+          margin-left: auto;
+        margin-right: auto;
+         width: 480px;
+        height: 320px
+              
+    }
+    
+    .clase_dialogo_home{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+         width: 480px;
+        height: 320px
+        
+        
+    }
+}

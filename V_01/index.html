@@ -1,0 +1,56 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>:: IBERDROLA ::</title>
+		<script language="javascript">
+			function nuevapantalla () 
+			{
+				var opciones=("toolbar=no, location=0, directories=no,status=0, menubar=0 , " +
+						"scrollbars=0, resizable=0, fullscreen=1," +
+						'height='+screen.height+', width='+screen.width); 
+				var nuevaVentana = window.open('visor_curso.html',"",opciones);
+				nuevaVentana = nuevaVentana.document.documentElement;
+				if (nuevaVentana.requestFullscreen) nuevaVentana.requestFullscreen();
+				else if (nuevaVentana.msRequestFullscreen) {
+					nuevaVentana.msRequestFullscreen();
+				} else if (nuevaVentana.mozRequestFullScreen) {
+					nuevaVentana.mozRequestFullScreen();
+				} else if (nuevaVentana.webkitRequestFullscreen) {
+					nuevaVentana.webkitRequestFullscreen();
+				}				
+			}
+			//safari.application.addEventListener("open", openHandler, true);
+
+			
+		</script>
+		
+		<link href="css/index.css" rel="stylesheet" type="text/css">
+	</head>
+	<body style="background-image: url(img/pattern.png)" onLoad="javascript:nuevapantalla()">
+        <table align="center" style="height:600px; width:700px">
+<td valign="middle">
+<div style="width:700px; padding:30px;">
+	<h1>Bienvenido</h1>
+	<div style="clear:both; margin-bottom:30px;">
+	  <p>El contenido se abrir&aacute; autom&aacute;ticamente  en una nueva ventana 
+      a pantalla completa.</p>
+	  <p>Cuando cierre la ventana de contenido, volver&aacute; a esta ventana.</p>
+    </div>
+	<div id="recuerde">
+      <b>Recuerde:</b>
+      <ul>
+        <li>Es importante que <b>nunca cierre esta ventana antes de cerrar la ventana de contenido</b>. Si cierra primero esta ventana, los datos de su avance no se guardar&aacute;n correctamente.</li>
+        <li>Si la ventana de contenido no se abre autom&aacute;ticamente, <b>compruebe que no tiene bloqueadores de popups</b>.</li>
+        <li>Si el contenido no se abre autom&aacute;ticamente, pulse en <a href="javascript:nuevapantalla()">este enlace</a> para abrirlo.</li>
+      </ul>
+  </div>
+</div>
+</td>
+</table>
+	</body>
+</html>
+<style>
+body{
+	width:
+	}
+</style>

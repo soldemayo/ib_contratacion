@@ -1,0 +1,335 @@
+{
+	"esCursoSCORM" : "si",
+	"avance_restringido" : false,
+	"titulo" : "Guía de Consulta Esclerosis Lateral Amiotrófica",
+	"con_indice" : "",
+	"con_bibliografia" : "",
+	"con_ayuda" : "",
+	"con_audio" : "",
+	"unidades" : [{
+		"id" : "01",
+		"titulo" : "Alta de nuevo suministro",
+		"secciones": ["Síntomas de alarma", "Factores de riesgo", "Diagnóstico precoz", "Pruebas diagnósticas", "A tener en mente"],
+		"items" : [{
+				"id" : "00", 
+				"titulo" : "Requisitos previos a la contratación", 
+				"tiempoVisualizacion" : "0.01"
+			},{
+				"id" : "01", 
+				"titulo" : "Inicio", 
+				"tiempoVisualizacion" : "0.01"
+			},{
+				"id" : "02", 
+				"titulo" : "¿Cómo podemos distinguir el envejecimiento normal de la demencia?", 
+				"tiempoVisualizacion" : "0.01",
+				"seccion" : "0"
+			},{
+				"id" : "03", 
+				"titulo" : "Queja subjetiva de pérdida de memoria", 
+				"tiempoVisualizacion" : "0.01",
+				"seccion" : "1"
+			}
+		]},{
+			"id" : "02",
+			"titulo" : "Tratamiento Farmacológico y No Farmacológico",
+			"secciones": ["Estrategias para reducir el impacto de la enfermedad", "Fármacos", "Tratamiento no farmacológico", "A tener en mente"],
+			"items" : [{
+				    "id" : "00", 
+				    "titulo" : "Info", 
+				    "tiempoVisualizacion" : "0.01"
+			     },{
+					"id" : "01", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01"
+				},{
+					"id" : "02", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01",
+					"seccion" : "0"
+				},{
+					"id" : "03", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01",
+					"seccion" : "0"
+				},{
+					"id" : "04", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01",
+					"seccion" : "0"
+				},{
+					"id" : "05", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01",
+					"seccion" : "1"
+				},{
+					"id" : "06", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01",
+					"seccion" : "1"
+				},{
+					"id" : "07", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01",
+					"seccion" : "1"
+				},{
+					"id" : "08", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01",
+					"seccion" : "2"
+				},{
+					"id" : "09", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01",
+					"seccion" : "2"
+				},{
+					"id" : "10", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01",
+					"seccion" : "2"
+				},{
+					"id" : "11", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01",
+					"seccion" : "2"
+				},{
+					"id" : "12", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01",
+					"seccion" : "2"
+				},{
+					"id" : "13", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01",
+					"seccion" : "2"
+				},{
+					"id" : "14", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01",
+					"seccion" : "3"
+				},{
+				    "id" : "15", 
+				    "titulo" : "Info", 
+				    "tiempoVisualizacion" : "0.01"
+			     }
+			]},{
+			"id" : "03",
+			"titulo" : "Vivir con Esclerosis Lateral Amiotrófica",
+			"secciones": ["Complicaciones ","Fases", "Medidas para la mejora: Fase INICIAL", "Medidas para la mejora: Fase INTERMEDIA", "Medidas para la mejora: Fase AVANZADA", "Consejos", "A tener en mente"],
+            "longSecciones": [120, 0, 180, 180, 180, 0, 0],
+			"items" : [{
+				    "id" : "00", 
+				    "titulo" : "Info", 
+				    "tiempoVisualizacion" : "0.01"
+			     },{
+					"id" : "01", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01"
+				},{
+					"id" : "02", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01",
+					"seccion" : "0"
+				},{
+					"id" : "03", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01",
+					"seccion" : "0"
+				},{
+					"id" : "04", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01",
+					"seccion" : "0"
+				},{
+					"id" : "05", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01",
+					"seccion" : "0"
+				},{
+					"id" : "06", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01",
+					"seccion" : "1"
+				},{
+					"id" : "07", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01",
+					"seccion" : "2"
+				},{
+					"id" : "08", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01",
+					"seccion" : "3"
+				},{
+					"id" : "09", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01",
+					"seccion" : "4"
+				},{
+					"id" : "10", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01",
+					"seccion" : "5"
+				},{
+					"id" : "11", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01",
+					"seccion" : "5"
+				},{
+					"id" : "12", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01",
+					"seccion" : "6"
+				},{
+				    "id" : "13", 
+				    "titulo" : "Info", 
+				    "tiempoVisualizacion" : "0.01"
+			     }
+			]
+		},{
+			"id" : "04",
+			"titulo" : "Cambios en la Familia: El Cuidador",
+			"secciones": ["Dinámica familiar", "El cuidador", "Fases del cuidador ante la enfermedad", "Sentimientos negativos del cuidador", "Apoyos externos", "A tener en mente"],
+			"items" : [{
+				    "id" : "00", 
+				    "titulo" : "Info", 
+				    "tiempoVisualizacion" : "0.01"
+			     },{
+					"id" : "01", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01"
+				},{
+					"id" : "02", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01",
+					"seccion" : "0"
+				},{
+					"id" : "03", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01",
+					"seccion" : "1"
+				},{
+					"id" : "04", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01",
+					"seccion" : "1"
+				},{
+					"id" : "05", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01",
+					"seccion" : "1"
+				},{
+					"id" : "06", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01",
+					"seccion" : "2"
+				},{
+					"id" : "07", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01",
+					"seccion" : "3"
+				},{
+					"id" : "08", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01",
+					"seccion" : "3"
+				},{
+					"id" : "09", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01",
+					"seccion" : "4"
+				},{
+					"id" : "10", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01",
+					"seccion" : "5"
+				},{
+				    "id" : "11", 
+				    "titulo" : "Info", 
+				    "tiempoVisualizacion" : "0.01"
+			     }
+			]
+		},{
+			"id" : "05",
+			"titulo" : "Ayudas y aspectos legales",
+			"secciones": ["Apoyos y recursos legales", "Toma de decisiones legales", "Situación laboral Incapacidad", "Grados de incapacidad laboral", "A tener en mente"],
+			"items" : [{
+				    "id" : "00", 
+				    "titulo" : "Info", 
+				    "tiempoVisualizacion" : "0.01"
+			     },{
+					"id" : "01", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01"
+				},{
+					"id" : "02", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01",
+					"seccion" : "0"
+				},{
+					"id" : "03", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01",
+					"seccion" : "0"
+				},{
+					"id" : "04", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01",
+					"seccion" : "0"
+				},{
+					"id" : "05", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01",
+					"seccion" : "1"
+				},{
+					"id" : "06", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01",
+					"seccion" : "2"
+				},{
+					"id" : "07", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01",
+					"seccion" : "3"
+				},{
+					"id" : "08", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01",
+					"seccion" : "4"
+				},{
+				    "id" : "09", 
+				    "titulo" : "Info", 
+				    "tiempoVisualizacion" : "0.01"
+			     }
+			]
+		},{
+			"id" : "06",
+			"titulo" : "Investigación y futuro",
+			"secciones": ["Investigación", "Futuro"],
+			"items" : [{
+				    "id" : "00", 
+				    "titulo" : "Info", 
+				    "tiempoVisualizacion" : "0.01"
+			     },{
+					"id" : "01", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01"
+				},{
+					"id" : "02", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01",
+					"seccion" : "0"
+				},{
+					"id" : "03", 
+					"titulo" : "Página de inicio", 
+					"tiempoVisualizacion" : "0.01",
+					"seccion" : "1"
+				},{
+				    "id" : "04", 
+				    "titulo" : "Info", 
+				    "tiempoVisualizacion" : "0.01"
+			     }
+                       
+			]
+		}
+	]		
+}

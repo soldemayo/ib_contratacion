@@ -1,0 +1,232 @@
+[{
+	"id" : "cerrar",
+	"src" : "LOCUCIONES/Loc_boton_cerrar",
+	"types" : ["mpeg","ogg"]
+},
+{
+	"id" : "siguiente",
+	"src" : "LOCUCIONES/siguiente",
+	"types" : ["mpeg","ogg"]
+},
+{
+	"id" : "loc_si",
+	"src" : "LOCUCIONES/loc_si",
+	"types" : ["mpeg","ogg"]
+},
+{
+	"id" : "loc_no",
+	"src" : "LOCUCIONES/loc_no",
+	"types" : ["mpeg","ogg"]
+},
+{
+	"id" : "loc_salir",
+	"src" : "LOCUCIONES/loc_salir",
+	"types" : ["mpeg","ogg"]
+},
+{
+	"id" : "loc_indice",
+	"src" : "LOCUCIONES/indice",
+	"types" : ["mpeg","ogg"]
+},
+{
+	"id" : "loc_ayuda",
+	"src" : "LOCUCIONES/ayuda",
+	"types" : ["mpeg","ogg"]
+},
+ {
+	"id" : "loc_avanzar",
+	"src" : "LOCUCIONES/avanzar",
+	"types" : ["mpeg","ogg"]
+},
+{
+	"id" : "loc_biblioteca",
+	"src" : "LOCUCIONES/biblioteca",
+	"types" : ["mpeg","ogg"]
+},
+{
+	"id" : "LOC_BIENV_VOZENOFF_005",
+	"src" : "contenido/home/audio/LOC_BIENV_VOZENOFF_005",
+	"types" : ["mpeg","ogg"]
+},
+ {
+	"id" : "farma",
+	"src" : "contenido/home/audio/LOC_BIENV_VOZENOFF_006",
+	"types" : ["mpeg","ogg"]
+},
+ {
+	"id" : "vivir",
+	"src" : "contenido/home/audio/LOC_BIENV_VOZENOFF_007",
+	"types" : ["mpeg","ogg"]
+},
+ {
+	"id" : "cuidador",
+	"src" : "contenido/home/audio/LOC_BIENV_VOZENOFF_008",
+	"types" : ["mpeg","ogg"]
+},
+ {
+	"id" : "legal",
+	"src" : "contenido/home/audio/LOC_BIENV_VOZENOFF_009",
+	"types" : ["mpeg","ogg"]
+},
+ {
+	"id" : "futuro",
+	"src" : "contenido/home/audio/LOC_BIENV_VOZENOFF_010",
+	"types" : ["mpeg","ogg"]
+},
+{
+	"id" : "Loc_carcasa_01",
+	"src" : "contenido/home/audio/Loc_carcasa_01",
+	"types" : ["mpeg","ogg"]
+},
+{
+	"id" : "Loc_carcasa_02",
+	"src" : "contenido/home/audio/Loc_carcasa_02",
+	"types" : ["mpeg","ogg"]
+},
+{
+	"id" : "Loc_carcasa_03",
+	"src" : "contenido/home/audio/Loc_carcasa_03",
+	"types" : ["mpeg","ogg"]
+},
+{
+	"id" : "loc_seccion_01_000",
+	"src" : "LOCUCIONES/indice/LOC_ SECC1_002",
+	"types" : ["mpeg","ogg"]
+},
+{
+	"id" : "loc_seccion_01_001",
+	"src" : "LOCUCIONES/indice/LOC_ SECC1_3_012",
+	"types" : ["mpeg","ogg"]
+},
+{
+	"id" : "loc_seccion_01_002",
+	"src" : "LOCUCIONES/indice/LOC_ SECC1_004",
+	"types" : ["mpeg","ogg"]
+},
+{
+	"id" : "loc_seccion_01_003",
+	"src" : "LOCUCIONES/indice/LOC_ SECC1_005",
+	"types" : ["mpeg","ogg"]
+},
+{
+	"id" : "loc_seccion_01_004",
+	"src" : "LOCUCIONES/indice/LOC_ SECC1_006",
+	"types" : ["mpeg","ogg"]
+},
+{
+	"id" : "loc_seccion_02_000",
+	"src" : "LOCUCIONES/indice/LOC_ SECC2_001",
+	"types" : ["mpeg","ogg"]
+},
+{
+	"id" : "loc_seccion_02_001",
+	"src" : "LOCUCIONES/indice/LOC_ SECC2_002",
+	"types" : ["mpeg","ogg"]
+},
+{
+	"id" : "loc_seccion_02_002",
+	"src" : "LOCUCIONES/indice/LOC_ SECC2_003",
+	"types" : ["mpeg","ogg"]
+},
+{
+	"id" : "loc_seccion_02_003",
+	"src" : "LOCUCIONES/indice/LOC_ SECC1_006",
+	"types" : ["mpeg","ogg"]
+},
+{
+	"id" : "loc_seccion_03_000",
+	"src" : "LOCUCIONES/indice/Pestana_1",
+	"types" : ["mpeg","ogg"]
+},
+{
+	"id" : "loc_seccion_03_001",
+	"src" : "LOCUCIONES/indice/Pestana_2",
+	"types" : ["mpeg","ogg"]
+},
+{
+	"id" : "loc_seccion_03_002",
+	"src" : "LOCUCIONES/indice/Pestana_3",
+	"types" : ["mpeg","ogg"]
+},{
+	"id" : "loc_seccion_03_003",
+	"src" : "LOCUCIONES/indice/Pestana_4",
+	"types" : ["mpeg","ogg"]
+},{
+	"id" : "loc_seccion_03_004",
+	"src" : "LOCUCIONES/indice/Pestana_5",
+	"types" : ["mpeg","ogg"]
+},{
+	"id" : "loc_seccion_03_005",
+	"src" : "LOCUCIONES/indice/Pestana_6",
+	"types" : ["mpeg","ogg"]
+},
+{
+	"id" : "loc_seccion_03_006",
+	"src" : "LOCUCIONES/indice/LOC_ SECC1_006",
+	"types" : ["mpeg","ogg"]
+},
+{
+	"id" : "loc_seccion_04_000",
+	"src" : "LOCUCIONES/indice/LOC_ SECC4_001",
+	"types" : ["mpeg","ogg"]
+},
+{
+	"id" : "loc_seccion_04_001",
+	"src" : "LOCUCIONES/indice/LOC_ SECC4_002",
+	"types" : ["mpeg","ogg"]
+},
+{
+	"id" : "loc_seccion_04_002",
+	"src" : "LOCUCIONES/indice/LOC_ SECC4_003",
+	"types" : ["mpeg","ogg"]
+},
+{
+	"id" : "loc_seccion_04_003",
+	"src" : "LOCUCIONES/indice/LOC_ SECC4_004",
+	"types" : ["mpeg","ogg"]
+},
+ {
+	"id" : "loc_seccion_04_004",
+	"src" : "LOCUCIONES/indice/LOC_ SECC4_005",
+	"types" : ["mpeg","ogg"]
+},
+{
+	"id" : "loc_seccion_04_005",
+	"src" : "LOCUCIONES/indice/LOC_ SECC1_006",
+	"types" : ["mpeg","ogg"]
+},
+{
+	"id" : "loc_seccion_05_000",
+	"src" : "LOCUCIONES/indice/LOC_ SECC5_3_002",
+	"types" : ["mpeg","ogg"]
+},
+{
+	"id" : "loc_seccion_05_001",
+	"src" : "LOCUCIONES/indice/LOC_ SECC5_4_0011",
+	"types" : ["mpeg","ogg"]
+},
+ {
+	"id" : "loc_seccion_05_002",
+	"src" : "LOCUCIONES/indice/LOC_ SECC5_3_005",
+	"types" : ["mpeg","ogg"]
+},
+{
+	"id" : "loc_seccion_05_003",
+	"src" : "LOCUCIONES/indice/LOC_ SECC5_3_008",
+	"types" : ["mpeg","ogg"]
+},
+{
+	"id" : "loc_seccion_05_004",
+	"src" : "LOCUCIONES/indice/LOC_ SECC1_006",
+	"types" : ["mpeg","ogg"]
+},
+{
+	"id" : "loc_seccion_06_000",
+	"src" : "LOCUCIONES/indice/LOC_ SECC6_001",
+	"types" : ["mpeg","ogg"]
+},
+{
+	"id" : "loc_seccion_06_001",
+	"src" : "LOCUCIONES/indice/LOC_ SECC6_002",
+	"types" : ["mpeg","ogg"]
+}]

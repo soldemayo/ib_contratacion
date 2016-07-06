@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/*Animación del item actual visto*/
+
+@keyframes animacion_feedback_item_visto {
+	0% {width:0px; display: inline;}
+	75% {width:50px;}
+	100% {display: none;}
+}
+
+@-webkit-keyframes animacion_feedback_item_visto /* Safari and Chrome */ {
+	0% {width:0px; visibility:visible;}
+	50% {width:50px;}
+	100% {visibility:hidden;}
+}
+
+.animacion_item_actual_visto {
+	animation: animacion_feedback_item_visto 2.5s;
+	-webkit-animation: animacion_feedback_item_visto 2.5s; /* Safari and Chrome */
+}
+
+/*Animación del botón de avance*/
+
+@keyframes avance_activo {
+	from {opacity : 0;}
+	to {opacity : 0.75;}
+}
+
+@-webkit-keyframes avance_activo /* Safari and Chrome */ {
+	from {opacity : 0;}
+	to {opacity : 0.75;}
+}
+
+.activacion_avance {
+	animation: avance_activo 0.5s linear 0s 10 normal;
+	-webkit-animation: avance_activo 0.5s linear 0s 10 normal; /* Safari and Chrome */
+    opacity: 1;
+}

@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-color: #f2f2f2;
+    background-repeat: repeat, no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    background-size: auto, cover;
+	color: #333;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 20px;
+	}
+
+
+a:hover{
+	color:#000;
+	
+	}

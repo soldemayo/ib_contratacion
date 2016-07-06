@@ -1,0 +1,108 @@
+/* CSS Document */
+.popup_glosario {
+	display:none;
+	background-color:#FFFFFF;
+	border-radius: 5px;
+	box-shadow: 0 0 20px 15px rgba(0, 0, 0, 0.5);
+	color: #111;
+	width:600px;
+	height: 430px;
+	padding: 25px;
+	padding-top:15px;
+	border:#afb4b7 1px solid;
+}
+
+.popup_glosario p {
+	float:left;
+	text-align:left;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#007c92;
+	letter-spacing:-1px;
+	font-size: 20px;
+	width:100%;
+}
+
+#area_indice_iniciales {
+	padding:2px;
+	padding-top:0px;
+	padding-bottom:0px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size: 20px;
+	width: 100%;
+	float:left;
+	background-color:#007c92;
+	margin-bottom:5px;
+}
+
+#area_indice_iniciales a{
+	font-weight:bold;
+	text-decoration: none;
+}
+	
+#area_indice_iniciales a:hover{
+	color:#333;
+}
+	
+.inicial_activa {
+	color:#fff;
+}
+
+#area_indice_iniciales .inicial_pasiva {
+	color:#00b0ca;
+	text-decoration: none;
+}
+
+#area_indice_iniciales a:hover.inicial_pasiva {
+	color:#00b0ca;
+	text-decoration: none;
+}
+
+#area_indice_terminos {
+	width: 120px;
+	position: relative;
+	float: left;
+	padding: 5px;
+	border-right:1px solid #ccc;
+	overflow-y:auto;
+	margin-top:5px;
+	text-align:left;
+	height:345px;
+}
+
+#area_indice_terminos a, .termino {
+	display:list-item;
+	list-style:none;
+	font-family:Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-size: 12px;
+	border-bottom:1px dotted #ccc;
+	width:100%;
+	color:#333;
+}
+
+#area_indice_terminos a:hover{
+	color:#007c92;
+}	
+
+#area_termino p{
+	margin:0px;
+	margin-bottom:10px;
+	color:#e60000;
+}
+	
+#area_termino {
+	position: relative;
+	float: left;
+	padding: 5px;
+	padding-top:0;
+	width:455px;
+}
+
+#area_termino .definicion {
+	font-family:Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color:#333;
+	font-size: 12px;
+	letter-spacing:normal;
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+   <meta http-equiv="Content-Type" charset="utf-8" content="text/html">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+   <title>:: IBERDROLA ::</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Oswald:400,700,300' rel='stylesheet' type='text/css'>
+   <link href="css/smoothness/jquery-ui-1.10.4.custom.css" rel="stylesheet" type="text/css">
+   <link href="css/glosario.css" rel="stylesheet" type="text/css">
+   <link href="css/enlaces.css" rel="stylesheet" type="text/css">
+    <link href="css/botonera.css" rel="stylesheet" type="text/css">
+    <link href="css/cabecera.css" rel="stylesheet" type="text/css">
+    <link href="css/esqueleto.css" rel="stylesheet" type="text/css">
+    <link href="css/home.css" rel="stylesheet" type="text/css">
+    <link href="css/popups.css" rel="stylesheet" type="text/css">
+    <link href="css/animaciones.css" rel="stylesheet" type="text/css">
+    <link href="css/secciones.css" rel="stylesheet" type="text/css">
+   <script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
+   <script type="text/javascript" src="js/jquery-ui-1.10.4.js"></script>
+   <script type="text/javascript" src="js/jquery.bpopup-0.8.0.min.js"></script>
+   <script type="text/javascript" src="js/jquery.textfill.min.js"></script>
+   <script type="text/javascript" src="js/jquery.fullscreen.min.js"></script>
+    <script type="text/javascript" src="js/grayscale.js"></script>
+   <script type="text/javascript" src="js/jquery.glosario.js"></script>
+   <script type="text/javascript" src="js/jquery.enlaces.js"></script>
+   <script type="text/javascript" src="js/locuciones.js"></script>
+   <script type="text/javascript" src="js/curso.js"></script>
+   <script type="text/javascript" src="js/APIWrapper.js"></script>
+       <script type="text/javascript" src="js/TweenMax.js"></script>
+
+   <script type="text/javascript" src="js/curso_sco.js"></script>
+
+    
+   <script>
+  
+      var miCurso = null;
+               
+      $(document).ready(function(){
+          miCurso = new Curso();
+          $('#contenedor_home')[0].src = './contenido/home/pagina.html';
+          alternaPopup($('#popup_home'));
+	
+		
+          
+             
+      });
+        $(document).keypress(function(event) {          
+                if ( event.keyCode == 97 ) {
+                        event.preventDefault();
+                        miCurso.habilitaAvance();
+                } 
+        });
+   </script>
+</head>
+<body>
+<video id="video" muted loop autoplay poster="img/poster.jpg">
+  <source src="media/video.mp4" type="video/mp4">
+  <source src="media/video.webm" type="video/webm">
+</video>
+    <div id="contenedorFondo">
+        <div id="contenedor_sombra">
+        <div id="contenedor1024">
+            <div id="contenedor_0">
+                <div id="contenedor_header">
+                    
+                  
+
+                    <div id=contenedor_titulos>
+                    <div id="zonaBlanca"><div id="iconoTema" class="iconoGas"></div><p id="nombreN0" class="gas">Suministro Gas</p><div id="btn_exit"><p class="txtSalir">SALIR</p></div><div id="btn_home"><p class="txtSalir">HOME</p></div>
+                    <div id="migas" class="migas"><span id="titulo_unidad"></span><span id="titulo_item"></span></div>
+</div>
+                   
+                    </div>
+                    <div id="contenedor_secciones"></div>
+                </div>
+                
+                <div id=contenedor_zoom>
+                    <iframe id="contenedor_pagina" 
+                        frameborder="0" 
+                        allowtransparency="true" 
+                        scrolling="no"></iframe>
+                </div>
+
+                
+        <!--		
+                <div id="btn_herramientas" title="Herramientas" class=icono_control></div>
+
+                <div id=area_progreso></div>
+                <div id=feedback_item_visto></div>
+
+        -->     <div id="pie">
+                <div id="CajaHome" class="icono_controlFake"></div>
+				<div id=area_progreso></div>
+                <div id=feedback_item_visto></div>
+                <div id="tituloCurso"><img id="logo" src="img/logoIBER.png"><div class="titulosJuntos">Procedimiento de Ventas y Constratación<br><span class="subTitulo">Canal Teléfono</span></div></div>
+                <div id="menu_herramientas" title="">
+                    <div id=btn_indice class=icono_control ><p class="txt_botones"><span style="text-decoration:underline">I</span>NDICE</p></div>
+<!--                <div id=btn_glosario class=icono_control title="Glosario"><p class="txt_botones"><span style="text-decoration:underline">H</span>ome</p></div>-->
+                    <div id=btn_ayuda  class=icono_control ><p class="txt_botones"><span style="text-decoration:underline">A</span>YUDA</p></div>
+                    <div id=btn_audio class=icono_control ><p class="txt_botones"><span style="text-decoration:underline">S</span>ONIDO</p></div>
+                    <div id=btn_doc class=icono_control ><p class="txt_botones"><span style="text-decoration:underline">B</span>IBLIOTECA</p></div>
+                   
+                </div>
+                <div id=contenedor_navegacion>
+                    <div id="control_retroceso" class=control_navegacion></div>
+                    <div id="numero_navegacion" >
+                        <span id=feedback_items_vistos>0</span>
+                        <span id="separador">/</span>		
+                        <span id=feedback_items_totales>0</span>
+                    </div>
+                    <div id="control_avance" tabindex="10" sdm_id_locucion="siguiente" class=control_navegacion></div>
+                </div>
+                </div>
+                <div id=popup_indice title="Índice" >
+                    <div id=area_indice></div>
+                    
+                </div>
+                <div id="popup_glosario" class="popup_glosario">
+                    <p>Glosario</p>
+                    <span class="button bClose" tabindex=100><span></span></span>
+                </div>
+                <div id="popup_doc">
+                    <p>Biblioteca<span class="bClose" tabindex=100><span>Cerrar</span></span></p>
+                    <span id="linea_de_abajo"></span>
+                </div>
+                <div id="popup_ayuda" title="Ayuda">
+                    <iframe id=contenedor_ayuda 
+                        frameborder="0" 
+                        allowtransparency="true"
+                        scrolling="no"></iframe>
+                </div>
+            </div>
+            <div id="popup_conf_salir" title="Salir del curso">
+                <p>¿Esta seguro de que desea salir del curso?</p>
+            </div>
+            
+            <div id="popup_activacion_audio">
+                <p>Pulse OK para continuar</p>
+            </div>
+
+            <div id="popup_home">
+                <iframe id=contenedor_home 
+                        frameborder="0" 
+                        allowtransparency="true"
+                        scrolling="no"></iframe>
+	       </div>
+            <div id="popup_externo">
+	       		<span class="button bClose"><span></span></span>
+				<div id="area_popup_externo"></div>
+	  		</div>
+            <div id="indicador_progreso"><div>
+        </div>
+        </div> 
+	</div>
+</body>
+</html>

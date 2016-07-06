@@ -1,0 +1,400 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@media only screen {
+#menu_herramientas {
+	display: none;
+    margin-top: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 320px;
+}
+#tituloCurso{
+	font-family: 'open_sans_condensedbold';
+	font-size:1.1em;
+	text-align:right;
+	float:right;
+	margin-right: 7px;
+	margin-top: 2px;
+	color:rgba(0,0,0,1.00);
+	}
+#logo{
+	float:right;
+	margin-top:3px;
+	margin-left:10px;
+	
+	}
+.titulosJuntos{
+	float:right;
+	width: 275px;
+	letter-spacing: -0.03em;
+	line-height: 100%;
+	border-right: solid 1px rgba(0,0,0,1.00);
+	padding-right: 10px;
+	}	
+.subTitulo{
+	font-family: 'open_sanscondensed_light';
+	}	
+	
+/*Estilos de los botones*/
+
+.icono_control {
+	background-position: center center;
+	background-repeat:no-repeat;
+	background-image:url(../img/interface/iconos.svg);
+	width:40px;
+	height:40px;
+	float:left;
+	cursor:pointer;
+	display:block;
+    margin-left: 25px;
+}
+
+.icono_controlFake {
+	width:40px;
+	height:40px;
+	float:left;
+	display:block;
+	background-color:rgba(255,255,255,0.50);
+	
+}
+
+.icono_control:first-child { margin-left: 0;}
+
+.icono_control:disabled {
+	opacity : 0.10;
+}
+
+.icono_control:hover {
+	background-image:url(../img/interface/iconos_hover.svg);
+    color: #a3b643 ;
+}
+
+.txt_botones{
+    margin: 0px;
+    margin-top: 25px;
+    color: #333;
+    font-size: 0.8em;
+    font-weight: 400;
+    letter-spacing: -1px;
+} 
+		
+
+
+
+#btn_indice{
+	background-position: -82px -5px;
+	display:none;
+}
+
+#btn_doc{
+	background-position: -300px -5px;
+	display:none;
+}
+
+#btn_glosario{
+	background-position: -105px -5px;
+	display:none;
+}
+	
+#btn_ayuda{
+	background-position: -158px -5px;
+	display:none;
+}	
+	
+#btn_audio{
+	background-position: -230px -5px;
+	display:none;
+}
+
+#btn_audio.audio_apagado{
+	background-position: -230px -48px;
+}
+
+
+/*Estilos de los elementos de progreso*/
+
+.item_contenido {
+	width:8px;
+	height:8px;
+	padding:0px;
+	margin:0px;
+	margin-right: 5px;
+	border-radius: 50px;
+	cursor:pointer;
+}
+
+#area_progreso {
+	height : 70px;
+	display:none;
+}
+.item_pendiente {
+	border: red 2px solid;
+}
+
+.item_visitado {
+	border: green 2px solid;
+}
+
+.item_actual {
+	background-color:grey;
+	border: grey 2px solid;
+}
+
+.item_actual_visto {
+	background-color:green;
+	animation: animacion_item_actual_visto 1s;
+	-webkit-animation: animacion_item_actual_visto 1s linear 2s 10 normal; /* Safari and Chrome */
+}
+
+#feedback_item_visto {
+	background-image:url(../img/interfaz/visto.png);
+	background-position: left center;
+	background-repeat:no-repeat;
+	width:50px;
+	height:50px;
+ 	visibility:hidden;
+	display:none;
+}
+
+/*Estilos de los controles de navegación*/
+
+.control_navegacion {
+	display:none;
+	background-position: center center;
+	background-repeat:no-repeat;
+	width:50px;
+	height:50px;
+	border:none;
+	float:right;
+	display: block;
+	cursor:pointer;
+	opacity : 0.75;
+}
+
+.control_navegacion:hover {
+	opacity : 1;
+}
+
+.navegacion_desactivada {
+	visibility:visible;
+    opacity: 0.15;
+    cursor:default;
+}
+
+.navegacion_desactivada:hover {
+	visibility:visible;
+     opacity: 0.15;
+    cursor: default;
+}
+
+#control_retroceso{
+	background-image:url(../img/interface/iconos_next_prev.png);
+    background-position: -380px -6px;
+    position: absolute;
+    top: 52px;
+    left: 100px;
+
+}	
+
+#control_avance{
+	background-image:url(../img/interface/iconos_next_prev.png);
+    background-position: -461px -6px;
+    position: absolute;
+    top: 52px;
+    right: 10px;
+    width: 25px;
+    height: 37px;
+}
+
+
+
+#logo_telefonica{
+    margin-top: 8px;
+    color: #333;
+    float: left;
+    background-image: url(../img/interface/logo_telefonica.svg);
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+
+#logo_telefonica p{
+    font-size: 8px;
+    text-align: left;
+    margin: 0px;
+    margin-top: 25px;
+}
+
+   
+/*controles navegacion*/
+
+#contenedor_navegacion {
+	display:none;
+	width: 235px;
+    color: #333;
+}
+
+#contenedor_navegacion div{
+	display: block;
+	float:left;
+    color: #333;
+
+}
+#numero_navegacion{
+    
+    position: absolute;
+    top: 52px;
+    left: 155px;
+}
+#feedback_items_vistos{
+    position: absolute;
+    top: 0px;
+    left: -30px;
+    font-size: 25px;
+    font-weight: 700;
+    width: 40px;
+    text-align: center;
+    
+}
+#separador{
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+#feedback_items_totales{
+    position: absolute;
+    top: 8px;
+    left: 23px;
+    font-size: 14px;
+    font-weight: 600;
+}
+}
+
+@media only screen and (max-width: 980px) and (min-width: 821px) and (orientation:landscape) {
+     
+     #menu_herramientas {
+         margin-top: 2px;
+		 background-color:#9C0;
+     }
+     
+     #logo_telefonica{
+         margin-top: -1px;
+     }
+
+     #logo_telefonica p{
+         margin-top: 25px;
+         font-size: 7px;
+         line-height: 8px;
+     }
+
+     #control_retroceso{
+         top: 40px;
+     }
+     
+     #control_avance{
+         top: 40px;
+     }
+     
+     #numero_navegacion{
+         top: 40px;
+     }
+     #feedback_items_vistos{
+         top: 0px;
+     }
+     
+     #separador{
+         top: 8px;
+     }
+     
+     #feedback_items_totales{
+         top: 8px;
+     }
+     
+     .txt_botones{
+         margin-top: 20px;
+         font-size: 0.7em;
+         letter-spacing: -1px;
+     }
+     
+     #btn_doc p{
+         margin-left: 8px;
+     }
+     #btn_ayuda p{
+         margin-left: 4px;
+     }
+     #btn_indice p{
+         margin-left: 4px;
+     }
+     #btn_home p{
+         margin-left: -2px;
+     }
+     #btn_audio p{
+         margin-left: 3px;
+     }
+ }
+ 
+@media (min-width: 1280px) and (max-width: 1280px)and (min-height: 676px) and (max-height: 800px) and (orientation: landscape) {
+     
+     #menu_herramientas {
+         margin-top: 10px;
+		 background-color:#9C0;
+     }
+     
+     #logo_telefonica{
+         margin-top: -1px;
+     }
+
+     #logo_telefonica p{
+         margin-top: 25px;
+         font-size: 7px;
+         line-height: 8px;
+     }
+
+     #control_retroceso{
+         top: 40px;
+     }
+     
+     #control_avance{
+         top: 40px;
+     }
+     
+     #numero_navegacion{
+         top: 40px;
+     }
+     #feedback_items_vistos{
+         top: 0px;
+     }
+     
+     #separador{
+         top: 8px;
+     }
+     
+     #feedback_items_totales{
+         top: 8px;
+     }
+     
+     .txt_botones{
+         margin-top: 20px;
+         font-size: 0.7em;
+         letter-spacing: -1px;
+     }
+     
+     #btn_doc p{
+         margin-left: 8px;
+     }
+     #btn_ayuda p{
+         margin-left: 4px;
+     }
+     #btn_indice p{
+         margin-left: 4px;
+     }
+     #btn_home p{
+         margin-left: -2px;
+     }
+     #btn_audio p{
+         margin-left: 3px;
+     }
+ }
