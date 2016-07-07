@@ -28,6 +28,11 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
          TweenMax.from(mc1, 1, {opacity:0, delay:0.2});
          TweenMax.from(mc2, 1, {opacity:0, x:20, delay:1});
          TweenMax.from(mcFin, 1, {opacity:0, y:100, delay:2});
+         
+         
+           $('#Stage_enlace1').click(function(){
+         	abrirPopupExterno({dimensiones: [600,400], url: "contenido/u01/p00/pagina.html"});
+          });
 
       });
       //Edge binding end

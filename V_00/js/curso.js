@@ -1027,12 +1027,27 @@ function Curso() {
 	this.alternarHome = function () {
 		alternaPopup($('#popup_home'));
 	};
-    this.alternarGas = function (opcion) {
+    this.alternarSecc = function (opcion) {
 		
-		if (opcion == "electrico"){
+		if (opcion == "e"){
 		$('#iconoTema').removeClass("iconoGas");
+		$('#iconoTema').removeClass("iconoC");
 		$('#iconoTema').addClass("iconoE");
-		$("#nombreN0").text("Suministro Eléctricooooo")
+		$("#nombreN0").text("Suministro Eléctrico")
+		}
+		
+		if (opcion == "g"){
+		$('#iconoTema').removeClass("iconoE");
+		$('#iconoTema').removeClass("iconoC");
+		$('#iconoTema').addClass("iconoGas");
+		$("#nombreN0").text("Suministro Gas")
+		}
+		
+		if (opcion == "c"){
+		$('#iconoTema').removeClass("iconoE");
+		$('#iconoTema').removeClass("iconoGas");
+		$('#iconoTema').addClass("iconoC");
+		$("#nombreN0").text("Criterios")
 		}
 	};
 	
@@ -1051,7 +1066,10 @@ function Curso() {
   			contentContainer:'#area_popup_externo',
             loadUrl: opciones.url,
             position: opciones.posicion,
-            fadeSpeed: 400,
+            fadeSpeed: 200,
+			speed: 850,
+			transition: 'slideDown',
+			easing: 'easeOutBack',
             onOpen: function(){_this.abiertoPopup();},
             onClose: function(){_this.cerradoPopup();}
         });

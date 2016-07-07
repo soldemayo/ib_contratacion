@@ -26,8 +26,8 @@ function visualizarItemPorId(idUnidad, idItem) {
 	cursoActual.visualizarItemPorId(idUnidad + ("000" + idItem).slice(-3));
 }
 
-function alternarGas(opcion) {
-	cursoActual.alternarGas(opcion);
+function alternarSecc(opcion) {
+	cursoActual.alternarSecc(opcion);
 }
 
 // objeto opciones:

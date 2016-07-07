@@ -61,12 +61,24 @@
 	background-image:url(../img/iconoGas.png);
 	background-position:center center;
 	background-repeat:no-repeat;
-	background-color:red;
+	background-color:rgba(195,255,92,1.00);
+
 	}	
 .iconoE{
-	background-color:blue;
+	background-image:url(../img/iconoE.png);
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-color:rgba(250,155,20,1.00);
 	}	
 	
+.iconoC{
+	background-image:url(../img/iconoC.png);
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-color:rgba(0,255,255,1.00);
+	}	
+	
+		
 .txtSalir{
     margin: 0px;
     margin-top: 25px;

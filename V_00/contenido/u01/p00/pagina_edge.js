@@ -104,6 +104,16 @@
                                 userClass: "menosUno",
                                 font: ['open-sans-condensed, sans-serif', [18, "px"], "rgba(113,113,113,1)", "300", "none", "normal", "break-word", "normal"],
                                 textStyle: ["", "", "", "", "none"]
+                            },
+                            {
+                                id: 'enlace1',
+                                type: 'text',
+                                rect: ['318px', '206px', '167px', '27px', 'auto', 'auto'],
+                                text: "<p style=\"margin: 0px; text-align: left;\">​contratarlos en primer lugar.</p><p style=\"margin:0px\">​</p><p style=\"margin:0px\">​</p>",
+                                align: "center",
+                                userClass: "enlacePop enlace1",
+                                font: ['open-sans-condensed, sans-serif', [17, "px"], "rgba(113,113,113,1)", "300", "none", "normal", "break-word", "normal"],
+                                textStyle: ["", "", "", "", "none"]
                             }]
                         }
                     ],
