@@ -815,12 +815,20 @@ function Curso() {
     //estableciendo la activaciÃƒÂ³n del control de avance y actualizando la informaciÃƒÂ³n de 
     //progreso
     this.visualizarItem = function( itemAMostrar ) {
-    	//Si esta seteado avance_restringido entonces evalua setClickListener
-    	//(le da funcionalidad de click a los indices de avance)
-    	(itemAMostrar.refCurso.avance_restringido && itemAMostrar.refCurso.setClickListener(itemAMostrar));
+			//Si el item que se quiere mostrar es el actual en el indice de progreso, se hace return
+			//para evitar cargar de nuevo.
+			if (this.itemActual === itemAMostrar) {
+				return false;
+			}
 
-    	if (this.itemActual != null && this.itemActual.visitado ) this.itemActual.setVisitado();
-    	this.itemActual = itemAMostrar;
+			//Si esta seteado avance_restringido entonces evalua setClickListener
+    	//(le da funcionalidad de click a los indices de avance)
+			if (itemAMostrar.refCurso.avance_restringido) {
+				itemAMostrar.refCurso.setClickListener(itemAMostrar);
+			}
+
+			this.itemActual = itemAMostrar;
+			if (this.itemActual != null && !this.itemActual.visitado ) this.itemActual.setVisitado();
     	this.locuciones.pausarAudios();
     	if ( this.esPrimerItem( this.itemActual ) ) {
     		this.$controlRetroceso.addClass("navegacion_desactivada");
@@ -1243,6 +1251,8 @@ function Unidad(objetoJson, refCurso) {
 		}
 		_this.items.push( new Item(this, refCurso) );
 	});
+
+	this.refCurso.itemAnterior = _this.items[0];
 	this.$indice = this.refCurso.$areaIndice.children().detach();
 
 	//OperaciÃƒÂ³n que establece la posiciÃƒÂ³n inicial de navegaciÃƒÂ³n y los items visitados a partir de la
@@ -1287,24 +1297,26 @@ function Unidad(objetoJson, refCurso) {
 		var _this = this,
 			anchoSeccion = $('#contenedor_secciones').empty().innerWidth()/this.secciones.length;
 		var avance_restringido = this.refCurso.avance_restringido;
-
 		//Recorre los items de la unidad y los appendea a #indicador_progreso.
 		//Si el curso no tiene restriccion de avance, le asigna la funcionalidad click.
-		_this.items.forEach(function(item) {
-			$('<div id="indice_item_' + item.id + '" class="item_contenido item_pendiente" title="' + item.titulo + '" style="display: inline-block;"></div>')
-	  			.appendTo("#indicador_progreso")
-	  			.on("click", function(ev) {
-	  				var itemId,
-	  					item;
-	  				if(!avance_restringido) {
-	  					//Si no esta seteado avance_restringido le da funcionalidad click a todos
-	  					//los indices de avance
-		  				itemId = ev.currentTarget.id.replace('indice_item_', '');
-		  				item = _this.refCurso.getItem(itemId);
-		  				_this.refCurso.visualizarItem(item);
-		  			}
-	  			});
-		});
+		if (_this.items.length > 1) {
+			_this.items.forEach(function(item) {
+				$('<div id="indice_item_' + item.id + '" class="item_contenido item_pendiente" title="' + item.titulo + '" style="display: inline-block;"></div>')
+				.appendTo("#indicador_progreso")
+				.on("click", function(ev) {
+					var itemId,
+							item;
+
+					if(!avance_restringido) {
+						//Si no esta seteado avance_restringido le da funcionalidad click a todos
+						//los indices de avance
+						itemId = ev.currentTarget.id.replace('indice_item_', '');
+						item = _this.refCurso.getItem(itemId);
+						_this.refCurso.visualizarItem(item);
+					}
+				});
+			});
+		}
 
 		_this.inicializaPosicion();
         
@@ -1422,6 +1434,7 @@ function Item(objetoJson, refCurso) {
 	
 	//OperaciÃƒÂ³n que carga la pÃƒÂ¡gina correspondiente al item en el area de visualizaciÃƒÂ³n 
 	this.visualizar = function() {
+		var itemAnterior = this.refCurso.itemAnterior;
 		var _this = this,
 			estadoNuevo = "";
 		
@@ -1503,11 +1516,18 @@ function Item(objetoJson, refCurso) {
 
 			this.refCurso.actualizaSCORM();
 			
-			estadoNuevo = "item_actual";
-		} else estadoNuevo = "item_actual_visto";
+			//estadoNuevo = "item_actual";
+		}// else estadoNuevo = "item_actual_visto";
 		
-		$('#indice_item_' + this.id).removeClass("item_pendiente item_visitado").addClass(estadoNuevo);
+		$('#indice_item_' + this.id).removeClass("item_pendiente item_visitado").addClass("item_actual");
 		$('#indice_item_' + this.id).removeClass("no_visitado visitado").addClass("actual");
+
+		if (_this.id !== itemAnterior.id ) {
+			$('#indice_item_' + itemAnterior.id).removeClass("item_actual").addClass("item_actual_visto");
+		}
+
+		_this.refCurso.itemAnterior = _this;
+
 		//this.itemIndice.removeClass("item_pendiente item_visitado").addClass(estadoNuevo);
 		//this.itemIndiceTexto.removeClass("no_visitado visitado").addClass("actual");
 
@@ -1526,7 +1546,7 @@ function Item(objetoJson, refCurso) {
 	   
 	   this.visitado = true;
 	  
-	   $('#indice_item_' + this.id).removeClass("item_pendiente item_actual_visto").addClass("item_visitado");
+	   $('#indice_item_' + this.id).remove();//Class("item_pendiente item_actual_visto").addClass("item_visitado");
 
 	   this.itemIndiceTexto.removeClass("no_visitado actual").addClass("visitado");
 	   this.itemIndiceTexto.on(eventosClick, function(){
