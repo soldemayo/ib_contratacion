@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+.menosUno{
+	letter-spacing:-0.03em;
+	color:red;
+	}
+	
+.enlacePop{
+	color:blue !important;
+	text-decoration:underline !important;
+	cursor:pointer;
+	letter-spacing:-0.03em;
+	}
+	
+.enlacePop:hover{
+	color:grey !important;
+	text-decoration: blink !important;
+	}

@@ -21,53 +21,52 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
          $(".noFunciona").children(".hotSpot").prop('disabled',true).addClass("disable"); 
          
          
-         $('#Stage_graficoCompleto_gasN1_1').attr({ sdm_id_unidad: "1", sdm_id_locucion:"LOC_BIENV_VOZENOFF_005"});
-         $('#Stage_btn_Farma').attr({ sdm_id_unidad: "2", sdm_id_locucion:"farma"});
-         $('#Stage_btn_Vivir').attr({ sdm_id_unidad: "3", sdm_id_locucion:"vivir"});
-         $('#Stage_btn_Cuidador').attr({ sdm_id_unidad: "4", sdm_id_locucion:"cuidador"});
-         $('#Stage_btn_Legal').attr({ sdm_id_unidad: "5", sdm_id_locucion:"legal"});
-         $('#Stage_btn_Futuro').attr({ sdm_id_unidad: "6", sdm_id_locucion:"futuro"});
+         $('#Stage_graficoCompleto_gasN2').attr({ sdm_id_unidad: "1", sdm_id_locucion:"LOC_BIENV_VOZENOFF_005"});
+         
+         $('#Stage_graficoCompleto_electricoN4').attr({ sdm_id_unidad: "1", sdm_id_locucion:"farma"});
+         
+         $('#Stage_graficoCompleto_criteriosN1').attr({ sdm_id_unidad: "1", sdm_id_locucion:"vivir"});
+         
+         
          
          $('#Stage_Loc_carcasa_01').attr({ sdm_id_locucion:"Loc_carcasa_01"});
          $('#Stage_Loc_carcasa_02').attr({ sdm_id_locucion:"Loc_carcasa_02"});
          $('#Stage_Loc_carcasa_03').attr({ sdm_id_locucion:"Loc_carcasa_03"});
          
          
-           $('.gas').click(function(){
-         	alternarGas("electrico");
-          });
-          $('#Stage_graficoCompleto_gasN1_1').click(function(){
+          $('.gas').click(function(){
+         	alternarSecc("g");
+         });
+         
+          $('.electrico').click(function(){
+         	alternarSecc("e");
+         });
+         
+          $('.criterios').click(function(){
+         	alternarSecc("c");
+         });
+         
+         
+          $('#Stage_graficoCompleto_gasN2').click(function(){
          	activarUnidad($(this).attr('sdm_id_unidad'));
          	sym.stop("fin");
          	alternarHome();
           });
          
-         
-         
-         
-          $('#Stage_btn_Vivir').click(function(){
+          $('#Stage_graficoCompleto_electricoN4').click(function(){
          	activarUnidad($(this).attr('sdm_id_unidad'));
          	sym.stop("fin");
          	alternarHome();
           });
          
-          $('#Stage_btn_Cuidador').click(function(){
-         	activarUnidad($(this).attr('sdm_id_unidad'));
-         	sym.stop("fin");
-         	alternarHome();
-         	});
-         
-          $('#Stage_btn_Legal').click(function(){
+           $('#Stage_graficoCompleto_criteriosN1').click(function(){
          	activarUnidad($(this).attr('sdm_id_unidad'));
          	sym.stop("fin");
          	alternarHome();
           });
          
-          $('#Stage_btn_Futuro').click(function(){
-         	activarUnidad($(this).attr('sdm_id_unidad'));
-         	sym.stop("fin");
-         	alternarHome();
-         	});
+         
+         
          
          
          

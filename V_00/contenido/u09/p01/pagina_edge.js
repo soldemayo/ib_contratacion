@@ -40,30 +40,24 @@
                             userClass: "fondo_falso"
                         },
                         {
-                            id: 'anima1',
-                            type: 'group',
-                            rect: ['40', '0', '400', '586', 'auto', 'auto'],
-                            c: [
-                            {
-                                id: 'Rectangle',
-                                type: 'rect',
-                                rect: ['0px', '0px', '400px', '586px', 'auto', 'auto'],
-                                fill: ["rgba(113,113,113,0.749)"],
-                                stroke: [0,"rgba(0,0,0,1)","none"]
-                            },
-                            {
-                                id: 'txtPrincipal',
-                                type: 'text',
-                                rect: ['36px', '44px', '326px', '224px', 'auto', 'auto'],
-                                text: "<p style=\"margin: 0px; text-align: left; line-height: 46px;\">​<span style=\"font-size: 55px; color: rgb(195, 255, 92); text-transform: none;\">Antes</span> <span style=\"color: rgb(255, 255, 255); text-transform: none;\">de dar de alta un nuevo suministro eléctrico, debemos realizar las</span></p><p style=\"margin: 0px; text-align: left; line-height: 46px;\"><span style=\"color: rgb(255, 255, 255);\"></span><span style=\"font-size: 55px; text-transform: none; color: rgb(195, 255, 92);\">siguientes comprobaciones</span><span style=\"font-size: 38px;\">.</span></p><p style=\"margin:0px\">​</p>",
-                                align: "justify",
-                                userClass: "",
-                                font: ['open-sans-condensed, sans-serif', [24, ""], "rgba(113,113,113,1.00)", "300", "none", "", "break-word", "normal"],
-                                textStyle: ["0px", "", "", "", "none"]
-                            }]
+                            id: 'Rectangle',
+                            type: 'rect',
+                            rect: ['40px', '0px', '400px', '586px', 'auto', 'auto'],
+                            fill: ["rgba(113,113,113,0.749)"],
+                            stroke: [0,"rgba(0,0,0,1)","none"]
                         },
                         {
-                            id: 'anima2',
+                            id: 'txtPrincipal',
+                            type: 'text',
+                            rect: ['76px', '44px', '326px', '224px', 'auto', 'auto'],
+                            text: "<p style=\"margin: 0px; text-align: left; line-height: 46px;\">​<span style=\"font-size: 55px; color: rgb(195, 255, 92); text-transform: none;\">Antes</span> <span style=\"color: rgb(255, 255, 255); text-transform: none;\">de dar de alta un nuevo suministro eléctrico, debemos realizar las</span></p><p style=\"margin: 0px; text-align: left; line-height: 46px;\"><span style=\"color: rgb(255, 255, 255);\"></span><span style=\"font-size: 55px; text-transform: none; color: rgb(195, 255, 92);\">siguientes comprobaciones</span><span style=\"font-size: 38px;\">.</span></p><p style=\"margin:0px\">​</p>",
+                            align: "justify",
+                            userClass: "",
+                            font: ['open-sans-condensed, sans-serif', [24, ""], "rgba(113,113,113,1.00)", "300", "none", "", "break-word", "normal"],
+                            textStyle: ["0px", "", "", "", "none"]
+                        },
+                        {
+                            id: 'Depto',
                             type: 'group',
                             rect: ['493px', '31', '485', '205', 'auto', 'auto'],
                             c: [
@@ -85,7 +79,7 @@
                             }]
                         },
                         {
-                            id: 'animafin',
+                            id: 'Edificio',
                             type: 'group',
                             rect: ['430px', '325px', '485', '205', 'auto', 'auto'],
                             c: [
